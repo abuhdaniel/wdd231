@@ -1,0 +1,57 @@
+/* larger.css */
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* HIDE HAMBURGER */
+
+    #menu {
+        display: none;
+    }
+
+    /* DESKTOP NAVIGATION */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navigation a {
+        padding: 0.8rem 1.2rem;
+        border-radius: 5px;
+    }
+
+    /* MAIN LAYOUT */
+
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    /* COURSE SECTION FULL WIDTH */
+
+    .courses-section {
+        grid-column: span 2;
+    }
+
+    /* COURSE CARDS */
+
+    #courses {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 2rem;
+    }
+}
