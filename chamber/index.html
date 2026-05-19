@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+
+        <div class="logo">
+            <img src="images/logo.webp" alt="Port Harcourt Chamber Logo">
+            <span>Port Harcourt Chamber</span>
+        </div>
+
+        <button id="menu" aria-label="Toggle Navigation"></button>
+    </div>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="home-main">
+
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+            <img src="images/hero-small.webp" alt="Port Harcourt city view">
+        </picture>
+
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+    </section>
+
+    <section class="card events">
+        <h2>Current Events</h2>
+
+        <p>
+            Join local businesses this Saturday for our Port Harcourt networking event.
+        </p>
+    </section>
+
+    <section class="card weather">
+        <h2>Weather</h2>
+
+        <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+
+        <p><strong>Description:</strong> <span id="weather-desc"></span></p>
+
+        <div id="forecast"></div>
+    </section>
+
+    <section class="card spotlight-section">
+        <h2>Company Spotlights</h2>
+
+        <div id="spotlight-container"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p><strong>Port Harcourt Chamber of Commerce</strong></p>
+
+    <p>Email: info@phchamber.org</p>
+
+    <p>Phone: +234 805 372 0502</p>
+
+    <p>&copy; <span id="year"></span> Port Harcourt Chamber</p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

@@ -1,14 +1,4 @@
-@media only screen and (min-width: 768px) {
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header-content {
-        width: 100%;
-    }
+@media screen and (min-width: 768px) {
 
     #menu {
         display: none;
@@ -16,31 +6,31 @@
 
     .navigation {
         display: flex;
-        gap: 1rem;
-        margin-top: 0;
+        justify-content: center;
     }
 
-    .navigation li {
-        margin: 0;
+    .home-main {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
+    .hero {
+        grid-column: 1 / 4;
+    }
+
+    .spotlight-section {
+        grid-column: 1 / 4;
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .list .card {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        align-items: center;
-        gap: 1rem;
-    }
-
-    footer {
-        padding: 2rem;
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
