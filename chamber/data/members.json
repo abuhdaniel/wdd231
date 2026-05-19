@@ -8,6 +8,7 @@
       "image": "business1.webp",
       "membership": "Gold"
     },
+
     {
       "name": "Bright Foods",
       "address": "45 GRA Phase 2, Port Harcourt",
@@ -16,6 +17,7 @@
       "image": "business2.webp",
       "membership": "Silver"
     },
+
     {
       "name": "Green Farms",
       "address": "22 Ada George Road, Port Harcourt",
@@ -24,37 +26,32 @@
       "image": "business3.webp",
       "membership": "Gold"
     },
-    {
-      "name": "Blue Ocean Hotel",
-      "address": "17 Peter Odili Road, Port Harcourt",
-      "phone": "+234 815 678 9012",
-      "website": "https://example.com",
-      "image": "business4.webp",
-      "membership": "Member"
-    },
+
     {
       "name": "City Transport",
       "address": "10 East-West Road, Port Harcourt",
       "phone": "+234 816 789 0123",
       "website": "https://example.com",
-      "image": "business5.webp",
+      "image": "business4.webp",
       "membership": "Silver"
     },
-    {
-      "name": "Smart Electronics",
-      "address": "7 Rumuola Junction, Port Harcourt",
-      "phone": "+234 817 890 1234",
-      "website": "https://example.com",
-      "image": "business6.webp",
-      "membership": "Gold"
-    },
+
     {
       "name": "Prime Fashion",
       "address": "30 Woji Road, Port Harcourt",
       "phone": "+234 818 901 2345",
       "website": "https://example.com",
-      "image": "business7.webp",
+      "image": "business5.webp",
       "membership": "Member"
+    },
+
+    {
+      "name": "Blue Ocean Hotel",
+      "address": "17 Peter Odili Road, Port Harcourt",
+      "phone": "+234 815 678 9012",
+      "website": "https://example.com",
+      "image": "business6.webp",
+      "membership": "Gold"
     }
   ]
 }
