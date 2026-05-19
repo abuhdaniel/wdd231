@@ -1,50 +1,198 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #00509e;
+    --accent-color: orange;
+    --background-color: #f4f4f4;
+    --text-color: #111111;
+    --white: #ffffff;
+}
+
+/* BODY */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* HAMBURGER MENU */
+
+#menu {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* NAVIGATION */
+
+.navigation {
+    list-style: none;
+    display: none;
+    margin-top: 1rem;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li {
+    margin: 0.5rem 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--secondary-color);
+}
+
+/* MAIN */
+
+main {
+    padding: 1rem;
+}
+
+main h1,
+main h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    display: block;
+    border-radius: 10px;
 }
+
+/* CTA BUTTON */
 
 .cta-button {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: orange;
-    color: white;
-    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 1rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
 }
 
-main {
-    padding: 1rem;
+.cta-button:hover {
+    opacity: 0.9;
 }
+
+/* HOME GRID */
 
 .home-main {
     display: grid;
     gap: 1rem;
 }
 
+/* CARDS */
+
 .card {
-    background-color: #f4f4f4;
-    padding: 1rem;
+    background-color: var(--background-color);
     border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+.card h2,
+.card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+/* DIRECTORY BUTTONS */
 
 .view-buttons {
     text-align: center;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .view-buttons button {
-    padding: .7rem 1rem;
+    padding: 0.7rem 1rem;
+    margin: 0.3rem;
     border: none;
-    background-color: #003366;
-    color: white;
     border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
 }
+
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* GRID VIEW */
 
 .grid {
     display: grid;
@@ -52,11 +200,27 @@ main {
     gap: 1rem;
 }
 
+/* MEMBER CARDS */
+
 .card img {
     width: 100%;
     max-width: 250px;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
+
+.card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* LIST VIEW */
 
 .list {
     display: flex;
@@ -64,9 +228,21 @@ main {
     gap: 1rem;
 }
 
+.list .card {
+    text-align: left;
+}
+
 .list .card img {
     display: none;
 }
+
+/* WEATHER */
+
+#forecast p {
+    margin-top: 0.5rem;
+}
+
+/* SPOTLIGHTS */
 
 #spotlight-container {
     display: grid;
@@ -74,16 +250,29 @@ main {
 }
 
 .spotlight-card {
-    background-color: white;
-    padding: 1rem;
+    background-color: var(--white);
     border-radius: 10px;
+    padding: 1rem;
     text-align: center;
+    border: 1px solid #dddddd;
 }
 
+.spotlight-card img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
 footer {
-    background-color: #003366;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
 }
