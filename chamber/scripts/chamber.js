@@ -1,4 +1,4 @@
-const apiKey = "YOUR_API_KEY";
+const apiKey = "6353e8bc642a3fcb1cab4f18c7a72500";
 
 const weatherURL =
 `https://api.openweathermap.org/data/2.5/forecast?lat=4.8156&lon=7.0498&appid=${apiKey}&units=imperial`;
