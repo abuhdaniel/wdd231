@@ -1,30 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/chamber.js" defer></script>
+    <meta
+        name="description"
+        content="Port Harcourt Chamber of Commerce supports local businesses, networking opportunities, economic growth, and community development in Rivers State."
+    >
 
-    <meta name="description" content="Discover attractions, opportunities, events, and local businesses in Port Harcourt through the Chamber of Commerce website.">
-    <meta name="author" content="Abuh Daniel">
+    <meta
+        name="author"
+        content="Abuh Daniel"
+    >
 
-    <title>Discover Port Harcourt</title>
+    <!-- Open Graph -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta
+        property="og:title"
+        content="Port Harcourt Chamber of Commerce"
+    >
 
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta
+        property="og:description"
+        content="Connect with local businesses, networking events, and economic opportunities through the Port Harcourt Chamber of Commerce."
+    >
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <meta
+        property="og:image"
+        content="https://abuhdaniel.github.io/wdd231/chamber/images/hero-large.webp"
+    >
 
-    <script src="scripts/navigation.js" defer></script>
+    <meta
+        property="og:url"
+        content="https://abuhdaniel.github.io/wdd231/chamber/"
+    >
+
+    <title>Port Harcourt Chamber of Commerce</title>
+
+    <!-- Favicon -->
+
+    <link
+        rel="icon"
+        type="image/x-icon"
+        href="images/favicon.ico"
+    >
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="styles/normalize.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/small.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="styles/larger.css"
+    >
+
+    <!-- JavaScript -->
+
+    <script
+        src="scripts/navigation.js"
+        defer
+    ></script>
+
+    <script
+        src="scripts/chamber.js"
+        defer
+    ></script>
 
 </head>
 
@@ -41,6 +114,7 @@
                 alt="Port Harcourt Chamber Logo"
                 width="80"
                 height="80"
+                loading="lazy"
             >
 
             <span>Port Harcourt Chamber</span>
@@ -59,16 +133,16 @@
         <ul class="navigation">
 
             <li>
-                <a href="index.html">
+                <a
+                    href="index.html"
+                    class="active"
+                >
                     Home
                 </a>
             </li>
 
             <li>
-                <a
-                    href="discover.html"
-                    class="active"
-                >
+                <a href="discover.html">
                     Discover
                 </a>
             </li>
@@ -91,43 +165,82 @@
 
 </header>
 
-<main>
+<main class="home-main">
 
-    <h1>Discover Port Harcourt</h1>
+    <h1>Port Harcourt Chamber of Commerce</h1>
 
-    <section class="card">
+    <!-- HERO SECTION -->
 
-        <h2>Explore the City</h2>
+    <section class="hero">
+
+        <picture>
+
+            <source
+                srcset="images/hero-large.webp"
+                media="(min-width: 768px)"
+            >
+
+            <img
+                src="images/hero-small.webp"
+                alt="Port Harcourt city skyline"
+                width="1200"
+                height="600"
+                loading="lazy"
+            >
+
+        </picture>
+
+        <a
+            href="join.html"
+            class="cta-button"
+        >
+            Join the Chamber
+        </a>
+
+    </section>
+
+    <!-- EVENTS -->
+
+    <section class="card events">
+
+        <h2>Current Events</h2>
 
         <p>
-            Discover local attractions, cultural landmarks,
-            businesses, restaurants, and exciting opportunities
-            in Port Harcourt.
+            Join local businesses this Saturday for our
+            Port Harcourt networking and business growth event.
         </p>
 
     </section>
 
-    <section class="card">
+    <!-- WEATHER -->
 
-        <h2>Community Events</h2>
+    <section class="card weather">
+
+        <h2>Weather</h2>
 
         <p>
-            Stay informed about upcoming networking events,
-            business conferences, trade fairs, and local
-            community activities.
+            <strong>Temperature:</strong>
+            <span id="current-temp"></span>
         </p>
+
+        <p>
+            <strong>Description:</strong>
+            <span id="weather-desc"></span>
+        </p>
+
+        <h3>3-Day Forecast</h3>
+
+        <div id="forecast"></div>
 
     </section>
 
-    <section class="card">
+    <!-- COMPANY SPOTLIGHTS -->
 
-        <h2>Business Opportunities</h2>
+    <section class="card spotlight-section">
 
-        <p>
-            Connect with entrepreneurs, local organizations,
-            and investors through the Port Harcourt Chamber
-            of Commerce.
-        </p>
+        <h2>Company Spotlights</h2>
+
+        <div id="spotlight-container"></div>
 
     </section>
 
@@ -150,10 +263,15 @@
     </p>
 
     <p>
-        &copy; 2026 Port Harcourt Chamber
+        &copy;
+        <span id="year"></span>
+        Port Harcourt Chamber
     </p>
+
+    <p id="lastModified"></p>
 
 </footer>
 
 </body>
+
 </html>
