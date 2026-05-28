@@ -90,12 +90,7 @@
         href="styles/larger.css"
     >
 
-    <!-- JavaScript Files -->
-    <script
-        src="scripts/navigation.js"
-        defer
-    ></script>
-
+    <!-- JavaScript -->
     <script
         src="scripts/join.js"
         defer
@@ -127,7 +122,9 @@
             id="menu"
             type="button"
             aria-label="Toggle Navigation"
-        ></button>
+        >
+            ☰
+        </button>
 
     </div>
 
@@ -162,6 +159,7 @@
 
     <div class="join-grid">
 
+        <!-- Membership Form -->
         <form
             method="get"
             action="thankyou.html"
@@ -286,7 +284,150 @@
 
         </form>
 
+        <!-- Membership Cards -->
+        <section class="membership-cards">
+
+            <div class="card">
+
+                <h2>NP Membership</h2>
+
+                <p>Perfect for nonprofit organizations.</p>
+
+                <button
+                    type="button"
+                    id="npButton"
+                >
+                    View Benefits
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Bronze Membership</h2>
+
+                <p>Great for growing businesses.</p>
+
+                <button
+                    type="button"
+                    id="bronzeButton"
+                >
+                    View Benefits
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Silver Membership</h2>
+
+                <p>More visibility and networking.</p>
+
+                <button
+                    type="button"
+                    id="silverButton"
+                >
+                    View Benefits
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Gold Membership</h2>
+
+                <p>Premium benefits and advertising.</p>
+
+                <button
+                    type="button"
+                    id="goldButton"
+                >
+                    View Benefits
+                </button>
+
+            </div>
+
+        </section>
+
     </div>
+
+    <!-- Dialog Modals -->
+
+    <dialog id="npModal">
+
+        <h3>NP Membership Benefits</h3>
+
+        <ul>
+            <li>No membership fee</li>
+            <li>Networking access</li>
+            <li>Community support</li>
+        </ul>
+
+        <button
+            type="button"
+            id="closeNp"
+        >
+            Close
+        </button>
+
+    </dialog>
+
+    <dialog id="bronzeModal">
+
+        <h3>Bronze Membership Benefits</h3>
+
+        <ul>
+            <li>Business listing</li>
+            <li>Event discounts</li>
+            <li>Monthly newsletter</li>
+        </ul>
+
+        <button
+            type="button"
+            id="closeBronze"
+        >
+            Close
+        </button>
+
+    </dialog>
+
+    <dialog id="silverModal">
+
+        <h3>Silver Membership Benefits</h3>
+
+        <ul>
+            <li>Homepage spotlight</li>
+            <li>Training access</li>
+            <li>Advertising discounts</li>
+        </ul>
+
+        <button
+            type="button"
+            id="closeSilver"
+        >
+            Close
+        </button>
+
+    </dialog>
+
+    <dialog id="goldModal">
+
+        <h3>Gold Membership Benefits</h3>
+
+        <ul>
+            <li>Premium advertising</li>
+            <li>VIP event access</li>
+            <li>Featured business spotlight</li>
+        </ul>
+
+        <button
+            type="button"
+            id="closeGold"
+        >
+            Close
+        </button>
+
+    </dialog>
 
 </main>
 

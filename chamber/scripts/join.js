@@ -1,31 +1,63 @@
-```javascript id="t7m4r2"
-window.addEventListener("DOMContentLoaded", () => {
+// Navigation Menu Toggle
+const menuButton = document.getElementById("menu");
+const navigation = document.querySelector(".navigation");
 
-const timestampField = document.getElementById("timestamp");
-
-if (timestampField) {
-timestampField.value = new Date().toISOString();
-}
-
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
+    menuButton.classList.toggle("open");
 });
 
+// Set Current Year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Last Modified Date
+document.getElementById("lastModified").textContent =
+    `Last Modification: ${document.lastModified}`;
+
+// Timestamp
+document.getElementById("timestamp").value = new Date().toISOString();
+
+// Open Modal Function
 function openModal(id) {
-
-const modal = document.getElementById(id);
-
-if (modal) {
-modal.showModal();
+    document.getElementById(id).showModal();
 }
 
-}
-
+// Close Modal Function
 function closeModal(id) {
-
-const modal = document.getElementById(id);
-
-if (modal) {
-modal.close();
+    document.getElementById(id).close();
 }
 
-}
-```
+// Membership Buttons
+document.getElementById("npButton").addEventListener("click", () => {
+    openModal("npModal");
+});
+
+document.getElementById("bronzeButton").addEventListener("click", () => {
+    openModal("bronzeModal");
+});
+
+document.getElementById("silverButton").addEventListener("click", () => {
+    openModal("silverModal");
+});
+
+document.getElementById("goldButton").addEventListener("click", () => {
+    openModal("goldModal");
+});
+
+// Close Modal Buttons
+document.getElementById("closeNp").addEventListener("click", () => {
+    closeModal("npModal");
+});
+
+document.getElementById("closeBronze").addEventListener("click", () => {
+    closeModal("bronzeModal");
+});
+
+document.getElementById("closeSilver").addEventListener("click", () => {
+    closeModal("silverModal");
+});
+
+document.getElementById("closeGold").addEventListener("click", () => {
+    closeModal("goldModal");
+});
+``
