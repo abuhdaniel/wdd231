@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Thank You</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/small.css">
-<link rel="stylesheet" href="styles/larger.css">
+    <title>Thank You | Port Harcourt Chamber</title>
 
-<style>
+    <meta
+        name="description"
+        content="Thank you for joining the Port Harcourt Chamber of Commerce."
+    >
 
-main {
-    padding: 2rem;
-}
+    <meta
+        name="author"
+        content="Abuh Daniel"
+    >
 
-.info {
-    background: #f4f4f4;
-    padding: 1rem;
-    border-radius: 10px;
-}
+    <!-- Favicon -->
 
-</style>
+    <link
+        rel="icon"
+        type="image/png"
+        href="images/favicon.png"
+    >
 
-<script defer>
+    <!-- CSS -->
 
-const params = new URLSearchParams(window.location.search);
+    <link
+        rel="stylesheet"
+        href="styles/normalize.css"
+    >
 
-window.addEventListener("DOMContentLoaded", () => {
+    <link
+        rel="stylesheet"
+        href="styles/small.css"
+    >
 
-document.getElementById("results").innerHTML = `
-<p><strong>First Name:</strong> ${params.get("fname")}</p>
-<p><strong>Last Name:</strong> ${params.get("lname")}</p>
-<p><strong>Email:</strong> ${params.get("email")}</p>
-<p><strong>Phone:</strong> ${params.get("phone")}</p>
-<p><strong>Business:</strong> ${params.get("business")}</p>
-<p><strong>Date Submitted:</strong> ${params.get("timestamp")}</p>
-`;
+    <link
+        rel="stylesheet"
+        href="styles/larger.css"
+    >
 
-});
+    <!-- JavaScript -->
 
-</script>
+    <script
+        src="scripts/thankyou.js"
+        defer
+    ></script>
 
 </head>
 
@@ -50,15 +60,52 @@ document.getElementById("results").innerHTML = `
 
 <header>
 
-<h1>Thank You!</h1>
+    <div class="header-content">
+
+        <div class="logo">
+
+            <img
+                src="images/logo.webp"
+                alt="Port Harcourt Chamber Logo"
+                width="80"
+                height="80"
+            >
+
+            <span>Port Harcourt Chamber</span>
+
+        </div>
+
+    </div>
 
 </header>
 
-<main>
+<main class="thankyou-main">
 
-<div class="info" id="results"></div>
+    <h1>Thank You for Joining!</h1>
+
+    <div
+        class="info"
+        id="results"
+    ></div>
 
 </main>
 
+<footer>
+
+    <p>
+        <strong>
+            Port Harcourt Chamber of Commerce
+        </strong>
+    </p>
+
+    <p>
+        &copy;
+        <span id="year"></span>
+        Port Harcourt Chamber
+    </p>
+
+</footer>
+
 </body>
+
 </html>
