@@ -1,21 +1,14 @@
-// Navigation Menu Toggle
-const menuButton = document.getElementById("menu");
-const navigation = document.querySelector(".navigation");
-
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-    menuButton.classList.toggle("open");
-});
-
 // Set Current Year
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+    new Date().getFullYear();
 
 // Last Modified Date
 document.getElementById("lastModified").textContent =
     `Last Modification: ${document.lastModified}`;
 
 // Timestamp
-document.getElementById("timestamp").value = new Date().toISOString();
+document.getElementById("timestamp").value =
+    new Date().toISOString();
 
 // Open Modal Function
 function openModal(id) {
@@ -60,4 +53,4 @@ document.getElementById("closeSilver").addEventListener("click", () => {
 document.getElementById("closeGold").addEventListener("click", () => {
     closeModal("goldModal");
 });
-``
+
