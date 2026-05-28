@@ -1,20 +1,105 @@
-/* Mobile Responsive Fix */
+/* =========================
+   GLOBAL STYLES
+========================= */
 
 body {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
+    line-height: 1.6;
 }
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #003b75;
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a.active {
+    background-color: #0056b3;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
 
 .join-main {
     padding: 1rem;
 }
 
+.join-main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .join-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem;
 }
+
+/* =========================
+   FORM
+========================= */
 
 .join-form {
     display: flex;
@@ -25,7 +110,7 @@ body {
 .join-form label {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    font-weight: 600;
 }
 
 .join-form input,
@@ -33,40 +118,137 @@ body {
 .join-form select {
     width: 100%;
     max-width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
-    padding: 0.5rem;
 }
+
+.submit-btn {
+    width: fit-content;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background-color: #003b75;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+   MEMBERSHIP CARDS
+========================= */
 
 .membership-cards {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .card {
-    padding: 1rem;
-    border-radius: 10px;
     background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    /* Animation */
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
 }
+
+/* Animation Delays */
+
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+/* Animation Keyframes */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card button {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: #003b75;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+/* =========================
+   DIALOG MODALS
+========================= */
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 400px;
+}
+
+dialog button {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    background-color: #003b75;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #003b75;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+/* =========================
+   RESPONSIVE IMAGES
+========================= */
 
 img {
     max-width: 100%;
     height: auto;
 }
-
-.navigation {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-header,
-footer {
-    padding: 1rem;
-}
-
-button,
-.submit-btn {
-    width: fit-content;
-    padding: 0.7rem 1rem;
-}
-
