@@ -1,278 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #003366;
-    --secondary-color: #00509e;
-    --accent-color: orange;
-    --background-color: #f4f4f4;
-    --text-color: #111111;
-    --white: #ffffff;
-}
-
-/* BODY */
+/* Mobile Responsive Fix */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: var(--white);
-    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
 }
 
-/* HEADER */
-
-header {
-    background-color: var(--primary-color);
-    color: var(--white);
+.join-main {
     padding: 1rem;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* LOGO */
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.logo img {
-    width: 50px;
-    height: auto;
-}
-
-.logo span {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-/* HAMBURGER MENU */
-
-#menu {
-    background: none;
-    border: none;
-    color: var(--white);
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-#menu::before {
-    content: "☰";
-}
-
-#menu.open::before {
-    content: "✖";
-}
-
-/* NAVIGATION */
-
-.navigation {
-    list-style: none;
-    display: none;
-    margin-top: 1rem;
-}
-
-.navigation.open {
-    display: block;
-}
-
-.navigation li {
-    margin: 0.5rem 0;
-}
-
-.navigation a {
-    display: block;
-    padding: 0.8rem;
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.navigation a:hover,
-.navigation a.active {
-    background-color: var(--secondary-color);
-}
-
-/* MAIN */
-
-main {
-    padding: 1rem;
-}
-
-main h1,
-main h2 {
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-/* HERO */
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
-
-/* CTA BUTTON */
-
-.cta-button {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--accent-color);
-    color: var(--white);
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.cta-button:hover {
-    opacity: 0.9;
-}
-
-/* HOME GRID */
-
-.home-main {
-    display: grid;
-    gap: 1rem;
-}
-
-/* CARDS */
-
-.card {
-    background-color: var(--background-color);
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card h2,
-.card h3 {
-    margin-bottom: 0.8rem;
-}
-
-.card p {
-    margin-bottom: 0.5rem;
-}
-
-/* DIRECTORY BUTTONS */
-
-.view-buttons {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.view-buttons button {
-    padding: 0.7rem 1rem;
-    margin: 0.3rem;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.view-buttons button:hover {
-    background-color: var(--secondary-color);
-}
-
-/* GRID VIEW */
-
-.grid {
+.join-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
-/* MEMBER CARDS */
-
-.card img {
-    width: 100%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.card a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.card a:hover {
-    text-decoration: underline;
-}
-
-/* LIST VIEW */
-
-.list {
+.join-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.list .card {
-    text-align: left;
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.list .card img {
-    display: none;
+.join-form input,
+.join-form textarea,
+.join-form select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
 }
 
-/* WEATHER */
-
-#forecast p {
-    margin-top: 0.5rem;
-}
-
-/* SPOTLIGHTS */
-
-#spotlight-container {
+.membership-cards {
     display: grid;
     gap: 1rem;
 }
 
-.spotlight-card {
-    background-color: var(--white);
-    border-radius: 10px;
+.card {
     padding: 1rem;
-    text-align: center;
-    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: #f4f4f4;
 }
 
-.spotlight-card img {
-    width: 120px;
+img {
+    max-width: 100%;
     height: auto;
-    margin-bottom: 1rem;
 }
 
-/* FOOTER */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+header,
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
+    padding: 1rem;
 }
 
-footer p {
-    margin: 0.3rem 0;
+button,
+.submit-btn {
+    width: fit-content;
+    padding: 0.7rem 1rem;
 }
+
