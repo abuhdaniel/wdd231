@@ -24,7 +24,10 @@ places.forEach((place, index) => {
 
         <p>${place.description}</p>
 
-        <button>Learn More</button>
+        <button aria-label="Learn more about ${place.name}"
+                onclick="alert('More information about ${place.name} coming soon!')">
+            Learn More
+        </button>
     `;
 
     cards.appendChild(card);

@@ -1,18 +1,111 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
 body{
-    font-family: Roboto,sans-serif;
+    font-family:'Roboto',sans-serif;
+    margin:0;
+    line-height:1.6;
+    background:#f8f9fa;
+    color:#222;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#003b75;
+    color:white;
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+}
+
+.logo img{
+    width:60px;
+    height:auto;
+}
+
+.logo span{
+    font-weight:700;
+    font-size:1.2rem;
+}
+
+#menu{
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation{
+    list-style:none;
+    padding:0;
     margin:0;
 }
 
+.navigation li{
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.navigation a{
+    display:block;
+    padding:1rem;
+    text-decoration:none;
+    color:white;
+    font-weight:700;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background:#0056b3;
+}
+
+/* =========================
+   MAIN
+========================= */
+
 .discover-main{
+    max-width:1200px;
+    margin:0 auto;
     padding:1rem;
 }
 
-#visit-message{
-    background:#f4f4f4;
-    padding:1rem;
-    margin-bottom:1rem;
-    border-radius:8px;
+h1{
+    text-align:center;
+    color:#003b75;
 }
+
+#visit-message{
+    background:#e9ecef;
+    padding:1rem;
+    border-radius:10px;
+    margin-bottom:1.5rem;
+}
+
+/* =========================
+   DISCOVER CARDS
+========================= */
 
 #discover-cards{
     display:grid;
@@ -31,15 +124,49 @@ body{
 
 .card{
     background:white;
-    border:1px solid #ddd;
+    border-radius:12px;
     padding:1rem;
-    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#003b75;
+    margin-top:0;
+}
+
+.card figure{
+    margin:0;
 }
 
 .card img{
     width:100%;
+    height:auto;
     border-radius:10px;
+    display:block;
 }
+
+.card address{
+    font-style:normal;
+    font-weight:700;
+    margin:.75rem 0;
+}
+
+.card button{
+    background:#003b75;
+    color:white;
+    border:none;
+    padding:.75rem 1rem;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#0056b3;
+}
+
+/* =========================
+   GRID AREAS
+========================= */
 
 #discover-cards .card:nth-child(1){grid-area:card1;}
 #discover-cards .card:nth-child(2){grid-area:card2;}
@@ -49,3 +176,15 @@ body{
 #discover-cards .card:nth-child(6){grid-area:card6;}
 #discover-cards .card:nth-child(7){grid-area:card7;}
 #discover-cards .card:nth-child(8){grid-area:card8;}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#003b75;
+    color:white;
+    text-align:center;
+    padding:2rem 1rem;
+    margin-top:2rem;
+}
