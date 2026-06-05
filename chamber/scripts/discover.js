@@ -24,9 +24,10 @@ places.forEach((place, index) => {
 
         <p>${place.description}</p>
 
-        <button aria-label="Learn more about ${place.name}"
-                onclick="alert('More information about ${place.name} coming soon!')">
-            Learn More
+        <button
+        type="button"
+         aria-label="Learn more about ${place.name}"
+         Learn More
         </button>
     `;
 
