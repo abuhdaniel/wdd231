@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "date": "2026-06-01",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 46,
+    "silo": "Silo 1"
+  },
+  {
+    "id": 2,
+    "date": "2026-06-02",
+    "supplier": "Lafarge",
+    "grade": "42.5N",
+    "quantity": 38,
+    "silo": "Silo 2"
+  },
+  {
+    "id": 3,
+    "date": "2026-06-03",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 50,
+    "silo": "Silo 1"
+  },
+  {
+    "id": 4,
+    "date": "2026-06-04",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 42,
+    "silo": "Silo 2"
+  },
+  {
+    "id": 5,
+    "date": "2026-06-05",
+    "supplier": "Lafarge",
+    "grade": "42.5N",
+    "quantity": 40,
+    "silo": "Silo 1"
+  },
+  {
+    "id": 6,
+    "date": "2026-06-06",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 44,
+    "silo": "Silo 2"
+  },
+  {
+    "id": 7,
+    "date": "2026-06-07",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 48,
+    "silo": "Silo 1"
+  },
+  {
+    "id": 8,
+    "date": "2026-06-08",
+    "supplier": "Lafarge",
+    "grade": "42.5N",
+    "quantity": 36,
+    "silo": "Silo 2"
+  },
+  {
+    "id": 9,
+    "date": "2026-06-09",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 52,
+    "silo": "Silo 1"
+  },
+  {
+    "id": 10,
+    "date": "2026-06-10",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 41,
+    "silo": "Silo 2"
+  },
+  {
+    "id": 11,
+    "date": "2026-06-11",
+    "supplier": "Lafarge",
+    "grade": "42.5N",
+    "quantity": 39,
+    "silo": "Silo 1"
+  },
+  {
+    "id": 12,
+    "date": "2026-06-12",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 45,
+    "silo": "Silo 2"
+  },
+  {
+    "id": 13,
+    "date": "2026-06-13",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 47,
+    "silo": "Silo 1"
+  },
+  {
+    "id": 14,
+    "date": "2026-06-14",
+    "supplier": "Lafarge",
+    "grade": "42.5N",
+    "quantity": 37,
+    "silo": "Silo 2"
+  },
+  {
+    "id": 15,
+    "date": "2026-06-15",
+    "supplier": "Dangote",
+    "grade": "52.5R",
+    "quantity": 49,
+    "silo": "Silo 1"
+  }
+]

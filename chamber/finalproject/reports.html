@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CemTrack | Reports</title>
+
+    <meta name="description"
+        content="View cement inventory reports, stock summaries, and silo utilization statistics.">
+
+    <meta name="author"
+        content="Abuh Daniel">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="CemTrack Reports">
+
+    <meta property="og:description"
+        content="Inventory reports and cement stock analysis.">
+
+    <meta property="og:type"
+        content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script type="module" src="js/reports.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>CemTrack</h1>
+    </div>
+
+    <button id="menu-btn" aria-label="Navigation Menu">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="reports.html" class="active">Reports</a></li>
+            <li><a href="request.html">Request Cement</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="page-header">
+        <h2>Inventory Reports</h2>
+
+        <p>
+            Monitor stock levels, deliveries,
+            and silo utilization.
+        </p>
+    </section>
+
+    <section class="report-cards">
+
+        <article class="report-card">
+            <h3>Total Deliveries</h3>
+            <p id="deliveryCount">Loading...</p>
+        </article>
+
+        <article class="report-card">
+            <h3>Total Cement Received</h3>
+            <p id="totalQuantity">Loading...</p>
+        </article>
+
+        <article class="report-card">
+            <h3>Silo 1 Deliveries</h3>
+            <p id="silo1Count">Loading...</p>
+        </article>
+
+        <article class="report-card">
+            <h3>Silo 2 Deliveries</h3>
+            <p id="silo2Count">Loading...</p>
+        </article>
+
+    </section>
+
+    <section class="stock-summary">
+
+        <h2>Inventory Summary</h2>
+
+        <div id="summaryContainer">
+
+        </div>
+
+    </section>
+
+    <section class="preferences-section">
+
+        <h2>Saved User Preference</h2>
+
+        <p id="storedPreference">
+            No preference saved.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 CemTrack | Abuh Daniel
+    </p>
+
+    <p>
+        <a href="attributions.html">
+            Attributions
+        </a>
+    </p>
+
+    <p>
+        <a href="https://youtube.com/"
+           target="_blank">
+            Project Demonstration Video
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CemTrack | Cement Inventory Management</title>
+
+    <meta name="description"
+        content="CemTrack helps manage cement inventory, silo storage, deliveries, and stock tracking.">
+
+    <meta name="author" content="Abuh Daniel">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CemTrack Cement Inventory Management">
+    <meta property="og:description" content="Track cement deliveries, silo storage, and inventory levels.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/cement-hero.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <h1>CemTrack</h1>
+    </div>
+
+    <button id="menu-btn" aria-label="Open Navigation Menu">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="request.html">Request Cement</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <img
+            src="images/cement-hero.webp"
+            alt="Cement storage silos"
+            loading="lazy"
+            width="1200"
+            height="600">
+
+        <div class="hero-text">
+            <h2>Cement Inventory Management Made Easy</h2>
+
+            <p>
+                Track deliveries, monitor silo capacity,
+                and maintain accurate inventory records.
+            </p>
+        </div>
+    </section>
+
+    <section class="overview">
+        <h2>About CemTrack</h2>
+
+        <p>
+            CemTrack is a simple inventory management system
+            designed to monitor cement deliveries, storage,
+            and stock levels. It helps ensure accurate
+            inventory records and efficient silo management.
+        </p>
+    </section>
+
+    <section class="stats">
+        <h2>Inventory Summary</h2>
+
+        <div class="cards">
+
+            <article class="card">
+                <h3>Total Deliveries</h3>
+                <p id="deliveries-count">0</p>
+            </article>
+
+            <article class="card">
+                <h3>Total Stock (Tons)</h3>
+                <p id="total-stock">0</p>
+            </article>
+
+            <article class="card">
+                <h3>Silo 1 Capacity</h3>
+                <p>35 Tons</p>
+            </article>
+
+            <article class="card">
+                <h3>Silo 2 Capacity</h3>
+                <p>40 Tons</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="preferences">
+        <h2>User Preference</h2>
+
+        <button id="save-view">
+            Save Preferred View
+        </button>
+
+        <p id="saved-message"></p>
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 CemTrack | Abuh Daniel
+    </p>
+
+    <p>
+        <a href="attributions.html">Attributions</a>
+    </p>
+
+    <p>
+        <a href="https://youtube.com/"
+            target="_blank">
+            Project Demonstration Video
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>

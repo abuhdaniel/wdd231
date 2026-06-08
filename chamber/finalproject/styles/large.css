@@ -1,0 +1,173 @@
+/* ====================================
+   LARGE SCREEN STYLES
+   768px and Above
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+    /* -------------------------
+       HEADER
+    ------------------------- */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .logo h1 {
+        margin: 0;
+    }
+
+    /* -------------------------
+       HAMBURGER MENU
+    ------------------------- */
+
+    #menu-btn {
+        display: none;
+    }
+
+    /* -------------------------
+       NAVIGATION
+    ------------------------- */
+
+    #navigation {
+        display: block !important;
+    }
+
+    #navigation ul {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    #navigation li {
+        border: none;
+    }
+
+    #navigation a {
+        padding: .75rem 1rem;
+        border-radius: 6px;
+        transition: background .3s ease;
+    }
+
+    #navigation a:hover {
+        background-color: rgba(255, 255, 255, .15);
+    }
+
+    /* -------------------------
+       HERO SECTION
+    ------------------------- */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+    }
+
+    .hero-text {
+        padding: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* -------------------------
+       SUMMARY CARDS
+    ------------------------- */
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* -------------------------
+       INVENTORY GRID
+    ------------------------- */
+
+    .inventory-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    /* -------------------------
+       REPORT CARDS
+    ------------------------- */
+
+    .report-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* -------------------------
+       REPORT SUMMARY
+    ------------------------- */
+
+    #summaryContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* -------------------------
+       FORM PAGE
+    ------------------------- */
+
+    form {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* -------------------------
+       CONFIRMATION PAGE
+    ------------------------- */
+
+    .confirmation-card {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* -------------------------
+       FOOTER
+    ------------------------- */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1.5rem 2rem;
+    }
+
+    footer p {
+        margin: .5rem;
+    }
+}
+
+/* ====================================
+   EXTRA LARGE SCREENS
+   1200px and Above
+==================================== */
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        max-width: 1400px;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .inventory-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .report-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
