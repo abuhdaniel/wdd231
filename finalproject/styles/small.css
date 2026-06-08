@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: var(--light);
     color: var(--dark);
     line-height: 1.6;
