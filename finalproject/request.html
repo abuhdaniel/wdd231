@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CemTrack | Request Cement</title>
+
+    <meta name="description"
+          content="Submit a cement request through the CemTrack inventory management system.">
+
+    <meta name="author"
+          content="Abuh Daniel">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="CemTrack Cement Request Form">
+
+    <meta property="og:description"
+          content="Request cement inventory for production or construction projects.">
+
+    <meta property="og:type"
+          content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>CemTrack</h1>
+    </div>
+
+    <button id="menu-btn" aria-label="Navigation Menu">
+        ☰
+    </button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="request.html" class="active">Request Cement</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="form-section">
+
+        <h2>Cement Request Form</h2>
+
+        <p>
+            Complete the form below to request cement
+            from the inventory system.
+        </p>
+
+        <form action="confirmation.html" method="get">
+
+            <label for="fullname">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                minlength="3">
+
+            <label for="department">
+                Department
+            </label>
+
+            <input
+                type="text"
+                id="department"
+                name="department"
+                required>
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+
+            <label for="quantity">
+                Quantity Required (Tons)
+            </label>
+
+            <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="100"
+                required>
+
+            <label for="grade">
+                Cement Grade
+            </label>
+
+            <select id="grade" name="grade" required>
+                <option value="">Select Grade</option>
+                <option value="42.5N">42.5N</option>
+                <option value="52.5R">52.5R</option>
+            </select>
+
+            <label for="purpose">
+                Purpose of Request
+            </label>
+
+            <textarea
+                id="purpose"
+                name="purpose"
+                rows="5"
+                required></textarea>
+
+            <button type="submit">
+                Submit Request
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; 2026 CemTrack | Abuh Daniel
+    </p>
+
+    <p>
+        <a href="attributions.html">
+            Attributions
+        </a>
+    </p>
+
+    <p>
+        <a href="https://youtube.com/"
+           target="_blank">
+            Project Demonstration Video
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>

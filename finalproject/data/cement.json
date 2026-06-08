@@ -10,7 +10,7 @@
   {
     "id": 2,
     "date": "2026-06-02",
-    "supplier": "Lafarge",
+    "supplier": "BUA",
     "grade": "42.5N",
     "quantity": 38,
     "silo": "Silo 2"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "date": "2026-06-04",
-    "supplier": "Dangote",
+    "supplier": "BUA",
     "grade": "52.5R",
     "quantity": 42,
     "silo": "Silo 2"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "date": "2026-06-05",
-    "supplier": "Lafarge",
+    "supplier": "Dangote",
     "grade": "42.5N",
     "quantity": 40,
     "silo": "Silo 1"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "date": "2026-06-06",
-    "supplier": "Dangote",
+    "supplier": "BUA",
     "grade": "52.5R",
     "quantity": 44,
     "silo": "Silo 2"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "date": "2026-06-08",
-    "supplier": "Lafarge",
+    "supplier": "BUA",
     "grade": "42.5N",
     "quantity": 36,
     "silo": "Silo 2"
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "date": "2026-06-10",
-    "supplier": "Dangote",
+    "supplier": "BUA",
     "grade": "52.5R",
     "quantity": 41,
     "silo": "Silo 2"
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "date": "2026-06-11",
-    "supplier": "Lafarge",
+    "supplier": "Dangote",
     "grade": "42.5N",
     "quantity": 39,
     "silo": "Silo 1"
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "date": "2026-06-12",
-    "supplier": "Dangote",
+    "supplier": "BUA",
     "grade": "52.5R",
     "quantity": 45,
     "silo": "Silo 2"
@@ -106,7 +106,7 @@
   {
     "id": 14,
     "date": "2026-06-14",
-    "supplier": "Lafarge",
+    "supplier": "BUA",
     "grade": "42.5N",
     "quantity": 37,
     "silo": "Silo 2"
