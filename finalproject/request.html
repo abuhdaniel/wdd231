@@ -1,169 +1,208 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CemTrack | Request Cement</title>
+```
+<title>CemTrack | Request Cement</title>
 
-    <meta name="description"
-          content="Submit a cement request through the CemTrack inventory management system.">
+<meta name="description"
+      content="Submit cement requests, specify quantities, and manage inventory requests through the CemTrack system.">
 
-    <meta name="author"
-          content="Abuh Daniel">
+<meta name="author"
+      content="Abuh Daniel">
 
-    <!-- Open Graph -->
-    <meta property="og:title"
-          content="CemTrack Cement Request Form">
+<!-- Open Graph -->
+<meta property="og:title"
+      content="CemTrack Cement Request Form">
 
-    <meta property="og:description"
-          content="Request cement inventory for production or construction projects.">
+<meta property="og:description"
+      content="Submit cement requests, track inventory needs, and manage material requirements with the CemTrack request system.">
 
-    <meta property="og:url"
-          content="https://abuhdaniel.github.io/wdd231/finalproject/request.html">
+<meta property="og:image"
+      content="https://abuhdaniel.github.io/wdd231/finalproject/images/cement-silo.webp">
 
-    <meta property="og:type"
-          content="website">
+<meta property="og:url"
+      content="https://abuhdaniel.github.io/wdd231/finalproject/request.html">
 
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect"
+<meta property="og:type"
+      content="website">
+
+<link rel="icon" href="favicon.ico">
+
+<!-- Google Fonts -->
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css">
+```
+
 </head>
 
 <body>
 
 <header>
 
-    <div class="logo">
-        <h1>Cement Request Form</h1>
-    </div>
+```
+<div class="logo">
+    <p>CemTrack</p>
+</div>
 
-    <button id="menu-btn" aria-label="Navigation Menu">
-        ☰
-    </button>
+<button id="menu-btn"
+        aria-label="Navigation Menu">
+    ☰
+</button>
 
-    <nav id="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="reports.html">Reports</a></li>
-            <li><a href="request.html" class="active">Request Cement</a></li>
-        </ul>
-    </nav>
+<nav id="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="request.html" class="active">Request Cement</a></li>
+    </ul>
+</nav>
+```
 
 </header>
 
 <main>
 
-    <section class="form-section">
+```
+<h1>Cement Request Form</h1>
 
-        <h2>Cement Request Form</h2>
+<section class="form-section">
 
-        <p>
-            Complete the form below to request cement
-            from the inventory system.
-        </p>
+    <h2>Submit a Cement Request</h2>
 
-        <form action="confirmation.html" method="get">
+    <p>
+        Complete the form below to request cement
+        from the inventory management system.
+    </p>
 
-            <label for="fullname">
-                Full Name
-            </label>
+    <img
+        src="images/cement-silo.webp"
+        alt="Cement inventory storage facility"
+        width="1200"
+        height="600"
+        loading="lazy">
 
-            <input
-                type="text"
-                id="fullname"
-                name="fullname"
-                required
-                minlength="3">
+    <form action="confirmation.html"
+          method="get">
 
-            <label for="department">
-                Department
-            </label>
+        <label for="fullname">
+            Full Name
+        </label>
 
-            <input
-                type="text"
-                id="department"
-                name="department"
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            required
+            minlength="3">
+
+        <label for="department">
+            Department
+        </label>
+
+        <input
+            type="text"
+            id="department"
+            name="department"
+            required>
+
+        <label for="email">
+            Email Address
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+
+        <label for="quantity">
+            Quantity Required (Tons)
+        </label>
+
+        <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="100"
+            required>
+
+        <label for="grade">
+            Cement Grade
+        </label>
+
+        <select id="grade"
+                name="grade"
                 required>
 
-            <label for="email">
-                Email Address
-            </label>
+            <option value="">
+                Select Grade
+            </option>
 
-            <input
-                type="email"
-                id="email"
-                name="email"
-                required>
+            <option value="42.5N">
+                42.5N
+            </option>
 
-            <label for="quantity">
-                Quantity Required (Tons)
-            </label>
+            <option value="52.5R">
+                52.5R
+            </option>
 
-            <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                min="1"
-                max="100"
-                required>
+        </select>
 
-            <label for="grade">
-                Cement Grade
-            </label>
+        <label for="purpose">
+            Purpose of Request
+        </label>
 
-            <select id="grade" name="grade" required>
-                <option value="">Select Grade</option>
-                <option value="42.5N">42.5N</option>
-                <option value="52.5R">52.5R</option>
-            </select>
+        <textarea
+            id="purpose"
+            name="purpose"
+            rows="5"
+            required></textarea>
 
-            <label for="purpose">
-                Purpose of Request
-            </label>
+        <button type="submit">
+            Submit Request
+        </button>
 
-            <textarea
-                id="purpose"
-                name="purpose"
-                rows="5"
-                required></textarea>
+    </form>
 
-            <button type="submit">
-                Submit Request
-            </button>
-
-        </form>
-
-    </section>
+</section>
+```
 
 </main>
 
 <footer>
 
-    <p>
-        &copy; 2026 CemTrack | Abuh Daniel
-    </p>
+```
+<p>&copy; 2026 CemTrack | Abuh Daniel</p>
 
-    <p>
-        <a href="attributions.html">
-            Attributions
-        </a>
-    </p>
+<p>
+    <a href="attributions.html">
+        Attributions
+    </a>
+</p>
 
-    <p>
-        <a href="https://youtube.com/"
-           target="_blank">
-            Project Demonstration Video
-        </a>
-    </p>
+<p>
+    <a href="https://youtube.com/"
+       target="_blank">
+        Project Demonstration Video
+    </a>
+</p>
+```
 
 </footer>
 

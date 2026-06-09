@@ -1,150 +1,168 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>CemTrack | Request Confirmation</title>
+```
+<title>CemTrack | Request Confirmation</title>
 
-    <meta name="description"
-          content="Confirmation page for submitted cement requests.">
+<meta name="description"
+      content="Review and confirm submitted cement request information through the CemTrack inventory management system.">
 
-    <meta name="author"
-          content="Abuh Daniel">
+<meta name="author"
+      content="Abuh Daniel">
 
-    <!-- Open Graph -->
-    <meta property="og:title"
-          content="CemTrack Request Confirmation">
+<!-- Open Graph -->
+<meta property="og:title"
+      content="CemTrack Request Confirmation">
 
-    <meta property="og:description"
-          content="Review submitted cement request details.">
+<meta property="og:description"
+      content="Review submitted cement request details and confirm inventory request information through CemTrack.">
 
-    <meta property="og:url"
-          content="https://abuhdaniel.github.io/wdd231/finalproject/confirmation.html">
+<meta property="og:image"
+      content="https://abuhdaniel.github.io/wdd231/finalproject/images/cement-silo.webp">
 
-    <meta property="og:type"
-          content="website">
+<meta property="og:url"
+      content="https://abuhdaniel.github.io/wdd231/finalproject/confirmation.html">
 
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect"
+<meta property="og:type"
+      content="website">
+
+<link rel="icon" href="favicon.ico">
+
+<!-- Google Fonts -->
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet"
+      href="styles/small.css">
+
+<link rel="stylesheet"
+      href="styles/large.css">
+
+<script src="scripts/confirmation.js"
+        defer></script>
+```
+
 </head>
 
 <body>
 
 <header>
 
-    <div class="logo">
-        <h1>Request Confirmation</h1>
-    </div>
+```
+<div class="logo">
+    <p>CemTrack</p>
+</div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="reports.html">Reports</a></li>
-            <li><a href="request.html">Request Cement</a></li>
-        </ul>
-    </nav>
+<nav id="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="request.html">Request Cement</a></li>
+    </ul>
+</nav>
+```
 
 </header>
 
 <main>
 
-    <section class="confirmation">
+```
+<h1>Request Confirmation</h1>
 
-        <h2>Request Submitted Successfully</h2>
+<section class="confirmation">
+
+    <h2>Request Submitted Successfully</h2>
+
+    <p>
+        Thank you for submitting your cement request.
+        The information below has been recorded.
+    </p>
+
+    <img
+        src="images/cement-silo.webp"
+        alt="Cement storage facility"
+        width="1200"
+        height="600"
+        loading="lazy">
+
+    <div class="confirmation-card">
 
         <p>
-            Thank you for submitting your cement request.
-            The information below has been recorded.
+            <strong>Full Name:</strong>
+            <span id="fullname"></span>
         </p>
 
-        <div class="confirmation-card">
+        <p>
+            <strong>Department:</strong>
+            <span id="department"></span>
+        </p>
 
-            <p><strong>Full Name:</strong>
-                <span id="fullname"></span>
-            </p>
+        <p>
+            <strong>Email:</strong>
+            <span id="email"></span>
+        </p>
 
-            <p><strong>Department:</strong>
-                <span id="department"></span>
-            </p>
+        <p>
+            <strong>Quantity Requested:</strong>
+            <span id="quantity"></span> Tons
+        </p>
 
-            <p><strong>Email:</strong>
-                <span id="email"></span>
-            </p>
+        <p>
+            <strong>Cement Grade:</strong>
+            <span id="grade"></span>
+        </p>
 
-            <p><strong>Quantity Requested:</strong>
-                <span id="quantity"></span> Tons
-            </p>
+        <p>
+            <strong>Purpose:</strong>
+            <span id="purpose"></span>
+        </p>
 
-            <p><strong>Cement Grade:</strong>
-                <span id="grade"></span>
-            </p>
+    </div>
 
-            <p><strong>Purpose:</strong>
-                <span id="purpose"></span>
-            </p>
-
-        </div>
-
+    <p>
         <a href="request.html" class="btn">
             Submit Another Request
         </a>
+    </p>
 
-    </section>
+</section>
+```
 
 </main>
 
 <footer>
 
-    <p>
-        &copy; 2026 CemTrack | Abuh Daniel
-    </p>
+```
+<p>&copy; 2026 CemTrack | Abuh Daniel</p>
 
-    <p>
-        <a href="attributions.html">
-            Attributions
-        </a>
-    </p>
+<p>
+    <a href="attributions.html">
+        Attributions
+    </a>
+</p>
 
-    <p>
-        <a href="https://youtube.com/"
-           target="_blank">
-            Project Demonstration Video
-        </a>
-    </p>
+<p>
+    <a href="https://youtube.com/"
+       target="_blank">
+        Project Demonstration Video
+    </a>
+</p>
+```
 
 </footer>
-
-<script>
-const params = new URLSearchParams(window.location.search);
-
-document.getElementById("fullname").textContent =
-    params.get("fullname") || "Not Provided";
-
-document.getElementById("department").textContent =
-    params.get("department") || "Not Provided";
-
-document.getElementById("email").textContent =
-    params.get("email") || "Not Provided";
-
-document.getElementById("quantity").textContent =
-    params.get("quantity") || "0";
-
-document.getElementById("grade").textContent =
-    params.get("grade") || "Not Selected";
-
-document.getElementById("purpose").textContent =
-    params.get("purpose") || "Not Provided";
-</script>
 
 </body>
 </html>

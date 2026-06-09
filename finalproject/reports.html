@@ -1,142 +1,171 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CemTrack | Reports</title>
+```
+<title>CemTrack | Inventory Reports</title>
 
-    <meta name="description"
-        content="View cement inventory reports, stock summaries, and silo utilization statistics.">
+<meta name="description"
+      content="View cement inventory reports, stock summaries, delivery records, and silo utilization statistics with CemTrack.">
 
-    <meta name="author"
-        content="Abuh  Daniel">
+<meta name="author"
+      content="Abuh Daniel">
 
-    <!-- Open Graph -->
-    <meta property="og:title"
-        content="CemTrack Reports">
+<!-- Open Graph -->
+<meta property="og:title"
+      content="CemTrack Inventory Reports">
 
-    <meta property="og:description"
-        content="Inventory reports and cement stock analysis.">
+<meta property="og:description"
+      content="Monitor cement inventory levels, delivery records, stock summaries, and silo utilization through detailed CemTrack reports.">
 
-    <meta property="og:url"
-        content="https://abuhdaniel.github.io/wdd231/finalproject/reports.html">
+<meta property="og:image"
+      content="https://abuhdaniel.github.io/wdd231/finalproject/images/cement-silo.webp">
 
-    <meta property="og:type"
-        content="website">
+<meta property="og:url"
+      content="https://abuhdaniel.github.io/wdd231/finalproject/reports.html">
 
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect"
+<meta property="og:type"
+      content="website">
+
+<link rel="icon" href="favicon.ico">
+
+<!-- Google Fonts -->
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/large.css">
 
-    <script type="module" src="js/reports.js" defer></script>
+<script type="module"
+        src="scripts/reports.js"></script>
+```
+
 </head>
 
 <body>
 
 <header>
 
-    <div class="logo">
-        <h1>Inventory Reports</h1>
-    </div>
+```
+<div class="logo">
+    <p>CemTrack</p>
+</div>
 
-    <button id="menu-btn" aria-label="Navigation Menu">
-        ☰
-    </button>
+<button id="menu-btn"
+        aria-label="Navigation Menu">
+    ☰
+</button>
 
-    <nav id="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="reports.html" class="active">Reports</a></li>
-            <li><a href="request.html">Request Cement</a></li>
-        </ul>
-    </nav>
+<nav id="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="reports.html" class="active">Reports</a></li>
+        <li><a href="request.html">Request Cement</a></li>
+    </ul>
+</nav>
+```
 
 </header>
 
 <main>
 
-    <section class="page-header">
-        <h2>Inventory Reports</h2>
+```
+<h1>Inventory Reports</h1>
 
-        <p>
-            Monitor stock levels, deliveries,
-            and silo utilization.
-        </p>
-    </section>
+<section class="page-header">
 
-    <section class="report-cards">
+    <h2>Inventory Reporting Dashboard</h2>
 
-        <article class="report-card">
-            <h3>Total Deliveries</h3>
-            <p id="deliveryCount">Loading...</p>
-        </article>
+    <p>
+        Monitor stock levels, cement deliveries,
+        supplier activity, and silo utilization.
+    </p>
 
-        <article class="report-card">
-            <h3>Total Cement Received</h3>
-            <p id="totalQuantity">Loading...</p>
-        </article>
+    <img
+        src="images/cement-silo.webp"
+        alt="Cement storage silos and inventory facilities"
+        width="1200"
+        height="600"
+        loading="lazy">
 
-        <article class="report-card">
-            <h3>Silo 1 Deliveries</h3>
-            <p id="silo1Count">Loading...</p>
-        </article>
+</section>
 
-        <article class="report-card">
-            <h3>Silo 2 Deliveries</h3>
-            <p id="silo2Count">Loading...</p>
-        </article>
+<section class="report-cards">
 
-    </section>
+    <h2>Key Performance Metrics</h2>
 
-    <section class="stock-summary">
+    <article class="report-card">
+        <h3>Total Deliveries</h3>
+        <p id="deliveryCount">Loading...</p>
+    </article>
 
-        <h2>Inventory Summary</h2>
+    <article class="report-card">
+        <h3>Total Cement Received</h3>
+        <p id="totalQuantity">Loading...</p>
+    </article>
 
-        <div id="summaryContainer">
+    <article class="report-card">
+        <h3>Silo 1 Deliveries</h3>
+        <p id="silo1Count">Loading...</p>
+    </article>
 
-        </div>
+    <article class="report-card">
+        <h3>Silo 2 Deliveries</h3>
+        <p id="silo2Count">Loading...</p>
+    </article>
 
-    </section>
+</section>
 
-    <section class="preferences-section">
+<section class="stock-summary">
 
-        <h2>Saved User Preference</h2>
+    <h2>Inventory Summary</h2>
 
-        <p id="storedPreference">
-            No preference saved.
-        </p>
+    <div id="summaryContainer"></div>
 
-    </section>
+</section>
+
+<section class="preferences-section">
+
+    <h2>Saved User Preference</h2>
+
+    <p id="storedPreference">
+        No preference saved.
+    </p>
+
+</section>
+```
 
 </main>
 
 <footer>
 
-    <p>
-        &copy; 2026 CemTrack | Abuh Daniel
-    </p>
+```
+<p>&copy; 2026 CemTrack | Abuh Daniel</p>
 
-    <p>
-        <a href="attributions.html">
-            Attributions
-        </a>
-    </p>
+<p>
+    <a href="attributions.html">
+        Attributions
+    </a>
+</p>
 
-    <p>
-        <a href="https://youtube.com/"
-           target="_blank">
-            Project Demonstration Video
-        </a>
-    </p>
+<p>
+    <a href="https://youtube.com/"
+       target="_blank">
+        Project Demonstration Video
+    </a>
+</p>
+```
 
 </footer>
 
