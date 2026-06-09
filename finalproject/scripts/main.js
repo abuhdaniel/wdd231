@@ -1,5 +1,3 @@
-// main.js
-
 import {
     savePreference,
     getPreference
