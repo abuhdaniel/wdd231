@@ -138,9 +138,8 @@ footer a {
 color: var(--white);
 }
 
-@media (max-width: 767px) {}
 #navigation {
-display: none;
+    display: none;
 }
 
 
